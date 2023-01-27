@@ -35,7 +35,7 @@ pipeline {
         stage('Test'){
              steps {
               
-            echo "Testing the new build"
+            echo "Testing the new build..."
                 
                 
             }
@@ -45,8 +45,8 @@ pipeline {
         stage('Deploy'){
              steps {
               
-                   echo "Deploying to the production"
-                   sh "pwd"
+                   
+                   
                    sh "docker-compose down" && "docker-compose up -d"
                 
             }
