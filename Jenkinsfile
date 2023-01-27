@@ -42,6 +42,16 @@ pipeline {
             
             
         }
+         stage('Check Current Working Directory'){
+             steps {
+              
+                   
+                   
+                   sh "pwd"
+                
+            }
+         
+          
         stage('Deploy'){
              steps {
               
